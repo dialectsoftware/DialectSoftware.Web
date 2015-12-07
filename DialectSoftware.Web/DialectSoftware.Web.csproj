@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{246A340D-106E-4A54-8AB8-87F61D534A7E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DialectSoftware.Web</RootNamespace>
+    <AssemblyName>DialectSoftware.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="HTMLDOMDocument.cs" />
+    <Compile Include="HTML\crc32.cs" />
+    <Compile Include="HTML\EncodingFoundException.cs" />
+    <Compile Include="HTML\HtmlAttribute.cs" />
+    <Compile Include="HTML\HtmlAttributeCollection.cs" />
+    <Compile Include="HTML\HtmlCmdLine.cs" />
+    <Compile Include="HTML\HtmlCommentNode.cs" />
+    <Compile Include="HTML\HtmlConsoleListener.cs" />
+    <Compile Include="HTML\HtmlDocument.cs" />
+    <Compile Include="HTML\HtmlElementFlag.cs" />
+    <Compile Include="HTML\HtmlEntity.cs" />
+    <Compile Include="HTML\HtmlNameTable.cs" />
+    <Compile Include="HTML\HtmlNode.cs" />
+    <Compile Include="HTML\HtmlNodeCollection.cs" />
+    <Compile Include="HTML\HtmlNodeNavigator.cs" />
+    <Compile Include="HTML\HtmlNodeType.cs" />
+    <Compile Include="HTML\HtmlParseError.cs" />
+    <Compile Include="HTML\HtmlParseErrorCode.cs" />
+    <Compile Include="HTML\HtmlTextNode.cs" />
+    <Compile Include="HTML\HtmlWeb.cs" />
+    <Compile Include="HTML\HtmlWebException.cs" />
+    <Compile Include="HTML\IOLibrary.cs" />
+    <Compile Include="HTML\MixedCodeDocument.cs" />
+    <Compile Include="HTML\MixedCodeDocumentCodeFragment.cs" />
+    <Compile Include="HTML\MixedCodeDocumentFragment.cs" />
+    <Compile Include="HTML\MixedCodeDocumentFragmentList.cs" />
+    <Compile Include="HTML\MixedCodeDocumentFragmentType.cs" />
+    <Compile Include="HTML\MixedCodeDocumentTextFragment.cs" />
+    <Compile Include="HTML\NameValuePair.cs" />
+    <Compile Include="HTML\NameValuePairList.cs" />
+    <Compile Include="HttpStream.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="MSHTML">
+      <Guid>{3050F1C5-98B5-11CF-BB82-00AA00BDCE0B}</Guid>
+      <VersionMajor>4</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Project Files\DialectSoftware.Web.1.0.1.nupkg" />
+    <None Include="Project Files\Web.nrproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DialectSoftware.InteropServices\DialectSoftware.InteropServices.csproj">
+      <Project>{8da64cd7-c488-4675-abd8-013ac2b4baf3}</Project>
+      <Name>DialectSoftware.InteropServices</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
