@@ -6,6 +6,12 @@ using System.Runtime.InteropServices.ComTypes;
 using System.Text;
 using DialectSoftware.InteropServices;
 
+/// ******************************************************************************************************************
+/// * Copyright (c) 2011 Dialect Software LLC                                                                        *
+/// * This software is distributed under the terms of the Microsoft Public License (Ms-PL)                           *
+/// *                                                                                                                *
+/// ******************************************************************************************************************
+
 namespace DialectSoftware.Web
 {
     //[ComVisible(true), ComImport(), Guid("25336920-03F9-11CF-8FD0-00AA00686F13")]

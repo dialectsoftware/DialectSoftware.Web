@@ -3,6 +3,11 @@ using System.Text;
 using System.Threading;
 using System.Runtime.InteropServices;
 
+/// ******************************************************************************************************************
+/// * Copyright (c) 2011 Dialect Software LLC                                                                        *
+/// * This software is distributed under the terms of the Microsoft Public License (Ms-PL)                           *
+/// *                                                                                                                *
+/// ******************************************************************************************************************
 
 namespace DialectSoftware.Web
 {
